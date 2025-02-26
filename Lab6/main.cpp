@@ -1,7 +1,7 @@
 // Name: Kelsey Wessel and Matthew Garino
 // My Class: CPSC 1021
 // Date: 02/26/2025
-// Desc: 
+// Desc: Create a Date class and a main function that takes in command line arguments that hold a textfile of texts to print from earliest to latest date. 
 
 #include <iostream>
 #include <iomanip>
@@ -33,10 +33,10 @@ int main(int argc, const char *argv[])
         dates.push_back(theDate);
     }
     
-    std::sort(dates.begin(), dates.begin()+numDates, Date::compare);
+    sort(dates.begin(), dates.begin()+numDates, Date::compare);
     
     for(int i = 0; i < numDates; i++)
     {
-        outFile << dates.at(i).print();
+        outFile << dates.at(i).print() << endl;
     }
 }

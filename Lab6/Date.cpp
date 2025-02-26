@@ -1,6 +1,6 @@
 #include "Date.h"
 
-const string Date::MONTHS[12] = {"JANUARY", "FEBURARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGuST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
+const string Date::MONTHS[12] = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
 
 const int Date::getMonth()
 {
@@ -35,7 +35,7 @@ void Date::setYear(int y)
 string Date::print()
 {
     stringstream date;
-    date << left << setw(10) << MONTHS[month - 1] << setw(3) << day << setw(5) << year << endl;
+    date << left << setw(10) << MONTHS[month - 1] << setw(3) << day << setw(5) << year;
     return date.str();
 }
 
