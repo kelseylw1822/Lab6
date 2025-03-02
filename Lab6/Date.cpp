@@ -39,7 +39,7 @@ string Date::print()
     return date.str();
 }
 
-bool Date::compare(const Date d1, const Date d2)
+bool Date::compare(const Date& d1, const Date& d2)
 {
     if (d1.year < d2.year)
     {
