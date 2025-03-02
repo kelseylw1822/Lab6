@@ -2,17 +2,17 @@
 
 const string Date::MONTHS[12] = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
 
-const int Date::getMonth()
+int Date::getMonth() const
 {
     return month;
 }
 
-const int Date::getDay()
+int Date::getDay() const
 {
     return day;
 }
 
-const int Date::getYear()
+int Date::getYear() const
 {
     return year;
 }
@@ -32,7 +32,7 @@ void Date::setYear(int y)
     year = y;
 }
 
-string Date::print()
+string Date::print() const
 {
     stringstream date;
     date << left << setw(10) << MONTHS[month - 1] << setw(3) << day << setw(5) << year;
