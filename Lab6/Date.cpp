@@ -39,8 +39,6 @@ string Date::print()
     return date.str();
 }
 
-
-
 bool Date::compare(const Date d1, const Date d2)
 {
     if (d1.year < d2.year)
@@ -53,6 +51,7 @@ bool Date::compare(const Date d1, const Date d2)
     {
         return true;
     }
+    
     // if they share a month you must compare them by day.
     if ((d1.year == d2.year) && (d1.month == d2.month) && (d1.day < d2.day))
     {

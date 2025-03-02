@@ -11,11 +11,11 @@ using namespace std;
 class Date
 {
 private:
-    int month = 1;
-    int day = 1;
-    int year = 1900;
+    int month ;
+    int day ;
+    int year ;
 public:
-    Date();
+    Date() : month(1), day(1), year(1900) {} ;
     Date(int m, int d, int y) : month(m), day(d), year(y) {} ;
     static const string MONTHS[12] ;
     const int getMonth();
